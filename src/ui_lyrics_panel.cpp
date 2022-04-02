@@ -395,7 +395,7 @@ namespace {
         //       metadb.h (in foo_SDK) -> metadb_display_field_provider
         //       which exists to let you hook into the title format process and add new fields.
 
-        std::string artist = track_metadata(m_now_playing, "artist");
+        std::string artist = track_metadata(m_now_playing, "album artist");
         std::string album = track_metadata(m_now_playing, "album");
         std::string title = track_metadata(m_now_playing, "title");
 

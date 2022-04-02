@@ -46,7 +46,7 @@ std::vector<LyricDataRaw> LocalFileSource::search(metadb_handle_ptr track, abort
                 LyricDataRaw result = {};
                 result.source_id = id();
                 result.persistent_storage_path = file_path;
-                result.artist = track_metadata(track, "artist");
+                result.artist = track_metadata(track, "album artist");
                 result.album = track_metadata(track, "album");
                 result.title = track_metadata(track, "title");
                 result.lookup_id = file_path;

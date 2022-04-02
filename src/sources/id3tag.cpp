@@ -41,7 +41,7 @@ std::vector<LyricDataRaw> ID3TagLyricSource::search(metadb_handle_ptr track, abo
         LyricDataRaw lyric = {};
         lyric.source_id = src_guid;
         lyric.persistent_storage_path = track->get_path();
-        lyric.artist = track_metadata(track, "artist");
+        lyric.artist = track_metadata(track, "album artist");
         lyric.album = track_metadata(track, "album");
         lyric.title = track_metadata(track, "title");
 

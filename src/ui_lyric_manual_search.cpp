@@ -124,7 +124,7 @@ BOOL ManualLyricSearch::OnInitDialog(CWindow /*parent*/, LPARAM /*clientData*/)
     bool playback_success = playback->get_now_playing(now_playing);
     if(playback_success)
     {
-        std::string artist = track_metadata(now_playing, "artist");
+        std::string artist = track_metadata(now_playing, "album artist");
         std::string album = track_metadata(now_playing, "album");
         std::string title = track_metadata(now_playing, "title");
 

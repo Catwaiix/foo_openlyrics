@@ -151,7 +151,7 @@ std::string track_metadata(const file_info& track_info, std::string_view key)
         err_msg += "ID3 tag ";
         err_msg += key;
         err_msg += " appears multiple times for ";
-        const char* const err_tags[] = {"artist", "album", "title"};
+        const char* const err_tags[] = {"album artist", "album", "title"};
         for(const char* err_tag : err_tags)
         {
             err_msg += "/";

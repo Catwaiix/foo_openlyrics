@@ -92,7 +92,7 @@ BOOL BulkLyricSearch::OnInitDialog(CWindow /*parent*/, LPARAM /*clientData*/)
     for(metadb_handle_ptr handle : m_tracks_to_search)
     {
         std::tstring ui_title = to_tstring(track_metadata(handle, "title"));
-        std::tstring ui_artist = to_tstring(track_metadata(handle, "artist"));
+        std::tstring ui_artist = to_tstring(track_metadata(handle, "album artist"));
 
         LVITEM item = {};
         item.mask = LVIF_TEXT;
