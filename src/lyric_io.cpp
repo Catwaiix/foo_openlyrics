@@ -185,7 +185,7 @@ static void internal_search_for_lyrics(LyricUpdateHandle& handle, bool local_onl
             }
             std::vector<LyricDataRaw> search_results = source->search(handle.get_track(), handle.get_checked_abort());
 
-            std::string tag_artist = track_metadata(handle.get_track(), "artist");
+            std::string tag_artist = track_metadata(handle.get_track(), "album artist");
             std::string tag_album = track_metadata(handle.get_track(), "album");
             std::string tag_title = track_metadata(handle.get_track(), "title");
             for(LyricDataRaw& result : search_results)

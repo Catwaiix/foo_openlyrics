@@ -17,7 +17,7 @@ struct lyric_metadb_index_client : metadb_index_client
 
     static metadb_index_hash hash(const file_info& info)
     {
-        std::string artist = track_metadata(info, "artist");
+        std::string artist = track_metadata(info, "album artist");
         std::string album = track_metadata(info, "album");
         std::string title = track_metadata(info, "title");
         std::string key = artist + album + title;

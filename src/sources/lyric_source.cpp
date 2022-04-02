@@ -82,7 +82,7 @@ bool LyricSourceRemote::is_local() const
 
 std::vector<LyricDataRaw> LyricSourceRemote::search(metadb_handle_ptr track, abort_callback& abort)
 {
-    std::string artist = track_metadata(track, "artist");
+    std::string artist = track_metadata(track, "album artist");
     std::string album = track_metadata(track, "album");
     std::string title = track_metadata(track, "title");
 
